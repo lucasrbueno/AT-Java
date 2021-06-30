@@ -12,7 +12,7 @@ public class AlunoService {
     @Autowired
     private IAlunoRepository alunoRepository;
 
-    public void incluir(Aluno aluno){
+    public void incluirAluno(Aluno aluno){
         alunoRepository.save(aluno);
     }
 

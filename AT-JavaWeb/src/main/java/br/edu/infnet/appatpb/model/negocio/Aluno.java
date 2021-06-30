@@ -15,7 +15,6 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "alunos")
 public class Aluno implements Serializable {
     
     @Id

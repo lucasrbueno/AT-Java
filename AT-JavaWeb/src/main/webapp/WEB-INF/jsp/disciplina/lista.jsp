@@ -6,12 +6,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<title>Consulta</title>
+<title>Lista</title>
 </head>
 <body>
     <header><c:import url="/WEB-INF/jsp/header.jsp"/></header>
     <div class="container">
-            <h1>Consulta de Disciplinas</h1>
+            <h1>Lista de Disciplinas</h1>
 
             <form method="get" action="/disciplina/procura">
                 <input type="text" name="keyword"> <input class="btn btn-primary" type="submit"

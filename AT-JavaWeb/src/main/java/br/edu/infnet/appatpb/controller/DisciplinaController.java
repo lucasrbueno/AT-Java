@@ -40,7 +40,7 @@ public class DisciplinaController {
     
     @GetMapping("/disciplina/lista")
     public String listaDisciplina(Model model) {
-    	model.addAttribute("listaDisciplina", disciplinaService.consultar());
+    	model.addAttribute("listaDisciplina", disciplinaService.lista());
         return "/disciplina/lista";
     }
     
@@ -49,11 +49,9 @@ public class DisciplinaController {
         try{
            disciplinaService.excluir(id);
         } catch(Exception e) {
-            model.addAttribute("permissao", "Disciplina atrelada ao aluno.");
-            
+            model.addAttribute("permissao", "Disciplina atrelada ao aluno.");           
             return listaDisciplina(model);
         }
-        
         return "redirect:/disciplina/lista";
     }
     

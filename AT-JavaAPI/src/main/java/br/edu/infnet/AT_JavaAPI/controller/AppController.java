@@ -37,7 +37,7 @@ public class AppController {
     }
     
     @PutMapping(value = "/usuario/alterar/{id}")
-    public void alterarProduto(@PathVariable Integer id, @RequestBody Usuario usuario) {  
+    public void alterarUsuario(@PathVariable Integer id, @RequestBody Usuario usuario) {  
         usuarioService.alterarCadastro(id, usuario);
     }
   

@@ -26,7 +26,7 @@ public class DisciplinaService {
         disciplinaRepository.save(disciplina);
     }
 
-    public List<Disciplina> consultar(){
+    public List<Disciplina> lista(){
         return (List<Disciplina>) disciplinaRepository.findAll();
     }
 
@@ -36,7 +36,6 @@ public class DisciplinaService {
 
     public void excluir(Integer id){
         disciplinaRepository.deleteById(id); 
-
     }
 
     public List<Disciplina> procura(String keyword){

@@ -27,7 +27,7 @@ public class AlunoController {
     
     @PostMapping("/aluno/cadastrar")
     public String cadastrarAluno(Model model, Aluno aluno) throws SQLException {
-    	alunoService.incluir(aluno);
+    	alunoService.incluirAluno(aluno);
         return "redirect:/aluno/lista";
     }
     
@@ -53,7 +53,7 @@ public class AlunoController {
     
     @PostMapping(value = "/aluno/salvaraluno")
     public String salvarAluno(@ModelAttribute("aluno") Aluno aluno) {
-    	alunoService.incluir(aluno);
+    	alunoService.incluirAluno(aluno);
         return "redirect:/aluno/lista";
     }
     

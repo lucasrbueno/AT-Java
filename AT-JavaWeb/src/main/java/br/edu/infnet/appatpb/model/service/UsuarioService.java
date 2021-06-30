@@ -2,11 +2,9 @@ package br.edu.infnet.appatpb.model.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import br.edu.infnet.appatpb.model.negocio.Usuario;
 import br.edu.infnet.appatpb.model.repository.IUsuarioRepository;
 import java.util.List;
-import org.springframework.data.domain.Sort;
 
 @Service
 public class UsuarioService {

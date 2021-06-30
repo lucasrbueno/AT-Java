@@ -12,7 +12,6 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "disciplinas")
 public class Disciplina implements Serializable {
     
     @Id

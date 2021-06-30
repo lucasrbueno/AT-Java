@@ -1,12 +1,9 @@
 package br.edu.infnet.appatpb.model.negocio;
 
-import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -28,10 +25,6 @@ public class Usuario {
     public Usuario(String nome, String email) {
         this.nome = nome;
         this.email = email;
-    }
-
-    public float calcularSalarioAnual() {
-        return "elberth moraes".equalsIgnoreCase(this.getNome()) ? 1000 : 500;
     }
 
     @Override
